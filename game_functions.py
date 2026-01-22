@@ -8,9 +8,9 @@ def pick_value(poss_values):
 # function to be used in game_2: Higher or Lower
 def check_higher_lower(current_val, next_val, user_input):
     if (next_val > current_val and user_input == "h") or (next_val < current_val and user_input == "l"):
-        True
+        return True
     elif (next_val < current_val and user_input == "h") or (next_val > current_val and user_input == "l"):
-        False
+        return False
 
 # function to be used in game_3: Hangman
 def process_guess(letter, board, word):
